@@ -1,4 +1,4 @@
-\documentclass{article}
+{{\documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{listings}
@@ -27,22 +27,19 @@
         \vspace{0.8cm}
             
         \Large
-        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Departamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
         Septiembre de 2020
-            
-    \end{center}
-\end{titlepage}
+       \end{center} 
 
+\newpage
 \tableofcontents
-
+\newpage
 \section{Sección introductoria}
-La memoria es fundamental en el desarrolo de aplicativos en el área infromatica. Conocer las capacidades gestión de memoria de nuestra maquina, nos ayuda  atomar las mejores decisionea la momento de programar.
-
-
-El conocimiento básico de esta realidad, debe ser preocupación de todos los que desarrollan actividades relacionadas con este medio.
-
+\renewcommand{\baselinestretch}{1.5}
+La memoria es fundamental en el desarrollo de aplicativos en el área informática. Conocer las capacidades gestión de memoria de nuestra maquina, nos ayuda  a tomar las mejores decisiones la momento de programar. El conocimiento básico de esta realidad, debe ser preocupación de todos los que desarrollan actividades relacionadas con este medio.
+\newpage
 \section{Memoria del computador.} \label{contenido}
 La memoria cumple un papel muy importante en el computador y su funcionamiento, ya que se
 trata del dispositivo donde se almacena temporalmente toda la información con la que trabajan
@@ -51,13 +48,16 @@ Se podría realizar la siguiente analogía; imaginen un empleado que debe realiz
 sería equivalente a la memoria del computador donde se almacena temporalmente la
 información que se encuentra en procesamiento; mientras que la persona o su cerebro vendría
 a ser como un procesador que realizará las distintas tareas:
+\newline
     
  1) Primero se sacan del cajón (disco duro) los documentos administrativos y se los lleva a un escritorio (memoria) donde se apilan para poder trabajar. Se toma un primer documento de la pila para que el empleado (microprocesador) realice los cálculos necesarios, así como otras tareas y finalmente se ingresan las modificaciones o resultados de datos procesados en dicho documento. Se regresa dicho documento procesado a otra parte del escritorio (memoria) donde se colocarán los documentos procesados.
+ \newline
     
 2) Luego se toma otro documento de la pila de documentos no procesados y se repiten los dos pasos anteriores. Eso se reitera una y otra vez hasta que todos los documentos hayan sido procesados.
+\newline
 
 3) Finalmente cuando se terminan de procesar todos los documentos, los cuales se encuentran apilados en la parte del escritorio (memoria) de documentos ya procesados, se toman y se vuelven a guardar en el cajón (disco duro) de almacenamiento de archivos. \cite{Desconocido}
-
+\newpage
 \section{Tipos de memoria.} \label{contenido}
 En un computador hay varios tipos de memoria, ordenados en jerarquías de velocidad y capacidad.
 
@@ -69,14 +69,9 @@ En un computador hay varios tipos de memoria, ordenados en jerarquías de veloci
 \end{itemize}
  
 
-Cuanto más bajamos en la lista desde la memoria Cache hacia el disco duro, decrece la velocidad
-de los distintos tipos de memoria y aumenta su capacidad.
-Los microprocesadores actuales son muy rápidos y funcionan a miles de millones de ciclos por
-segundo Ghz (Gigahertz), lo cual significa que pueden procesar miles de millones de bytes por
-segundo. Por esta razón requieren de dispositivos de almacenamiento temporal de alta
-velocidad que puedan seguirle el ritmo, de lo contrario se detendría para aguardar que la
-información le llegue.\\
-
+Cuanto más bajamos en la lista desde la memoria Cache hacia el disco duro, decrece la velocidad de los distintos tipos de memoria y aumenta su capacidad.
+Los microprocesadores actuales son muy rápidos y funcionan a miles de millones de ciclos por segundo Ghz (Gigahertz), lo cual significa que pueden procesar miles de millones de bytes por segundo. Por esta razón requieren de dispositivos de almacenamiento temporal de alta velocidad que puedan seguirle el ritmo, de lo contrario se detendría para aguardar que la información le llegue.
+\newline
 Sin embargo hay un pequeño problema, y es que la memoria que puede funcionar a la misma
 velocidad del microprocesador es muy cara; y en grandes cantidades harían inalcanzable los
 costos de un computador personal hogareña.
@@ -89,6 +84,8 @@ que utiliza un poco menos los coloca en la memoria Cache L2, que también se enc
 de los núcleos, pero es un poco más lenta que la anterior, sin embargo puede tener mayor
 capacidad, mientras que el resto de la información "cacheada" la coloca en la L3 que puede
 llegar a tener como 12 Megabytes en promedio.
+\newline
+
 En el próximo nivel de jerarquía se encuentra la memoria principal del computador, la memoria
 RAM, que a pesar de ser más lenta que la memoria Cache, es muchísimo más rápida que el disco
 duro y se puede tener en grandes cantidades a un precio accesible; por lo que cuando se trabaja,
@@ -101,6 +98,7 @@ programas y datos en ejecución que se utilizan menos o que ocupan espacio innec
 algún momento determinado y es preferible colocarlos en una zona de reserva donde siempre
 estarán listos para ser utilizados cuando se los requiera, pero que no ocuparán
 innecesariamente los espacios limitados de la memoria.
+\newline
 
 Por lo general hacia 2012 era normal tener 4 Gigabytes de memoria RAM en el computador,
 pero qué ocurriría si se comienzan a utilizar simultáneamente programas que requieren mucho
@@ -111,7 +109,9 @@ memoria); la solución es reservar un espacio de memoria virtual en el disco dur
 en mi computador, que cuenta con 3 Gigabytes de memoria RAM, el sistema operativo Windows
 7 me recomienda reservar 4 Gigabytes de memoria virtual). Con la memoria virtual, cada vez
 que hay algún recurso de un programa que ocupa mucho volumen de la memoria RAM y todavía
-no se está utilizando, se coloca hasta próximo aviso en la memoria virtual. De esta forma esa
+no se está utilizando, se coloca hasta próximo aviso en la memoria virtual.
+\newline
+De esta forma esa
 parte disponible puede ser utilizada por otros recursos en uso.
 La clave para un mejor rendimiento del computador y depender menos de la memoria virtual,
 siempre es tener mayor cantidad de memoria RAM; de esta manera cuando se está trabajando
@@ -129,7 +129,7 @@ un programa que no se está utilizando "todavía" pero que en cualquier momento 
 utilizará; y que dado que el disco duro es mucho más lento que la memoria RAM no es bueno
 depender mucho de ella; y lo mejor siempre es contar con la mayor cantidad posible de
 memoria RAM.
-
+\newline
 El tamaño en bits de un Microprocesador indica cuánta información puede procesar o
 manipular simultáneamente; por ejemplo un microprocesador de 32 bits puede procesar 4
 bytes al mismo tiempo (ya que 32 bits equivalen a 4 bytes); mientras que un microprocesador
@@ -145,7 +145,7 @@ microprocesador, de hecho es muchísimo más lenta, por lo que se tardan varios 
 enviar una cantidad tan grande de información, además que hacia el año 2012 la mayoría de los
 computadores hogareñas no contaban con semejante cantidad de memoria RAM, lo más común
 era tener unos 4 Gigabytes.
-
+\newline
 La velocidad de los módulos de memoria depende de la velocidad del bus, o sea las pistas del
 circuito impreso de la placa madre por la que viaja la información de un dispositivo a otro, y
 más concretamente de la velocidad del reloj del bus que une la memoria con el
@@ -196,7 +196,7 @@ en serie uno después del otro y los cuales solamente pueden ser accedidos secue
 como sucedía por ejemplo con un cassette, donde para llegar a un determinado punto de la cinta
 hay que pasar primero por todos los puntos anteriores; mientras que en la memoria RAM los
 datos pueden ser accedidos en cualquier orden.
-
+\newline
 Así como el microprocesador, un chip de memoria es un circuito integrado, compuesto por
 millones de transistores y capacitores. La memoria RAM está dividida en celdas en donde se
 almacenan temporalmente cada uno de los bits que componen los bytes de la información con
@@ -230,9 +230,10 @@ dinámicamente recargada todo el tiempo para no perder la información que almac
 en contra de este tipo de tecnología es que hace que este tipo de memoria sea más lenta, el
 punto a favor es que es económica y se puede tener en grandes cantidades a diferencia de la
 memoria Cache.
+\newline
 
 \textbf{Las celdas de la memoria DRAM.}
-
+\newline
 La memoria está formada por celdas de bits distribuidas en una grilla bidimensional. Las celdas
 de memoria (cada una compuesta por un capacitor y un transistor microscópicos) están
 grabadas en láminas u obleas de silicio, distribuidas en una matriz de columnas
@@ -268,41 +269,35 @@ desde ellas. Algunas de las funciones que cumplen esos componentes son:
 Otras funciones del controlador de memoria incluyen tareas como detección del tipo, velocidad
 y cantidad de memoria; así como el chequeo de errores de escritura de datos, especialmente
 durante el proceso de recargado de celdas, en que todo tiene que permanecer igual.
-
+\newline
 
 \textbf{La memoria estática (SRAM).} 
-
-La memoria estática RAM (SRAM) utiliza una tecnología diferente a aquella de la memoria
-DRAM. En la memoria estática cada celda de bit está compuesta por cuatro o seis transistores y
+\newline
+La memoria estática RAM (SRAM) utiliza una tecnología diferente a aquella de la memoria DRAM. En la memoria estática cada celda de bit está compuesta por cuatro o seis transistores y
 algunos circuitos; logrando que no sea necesario refrescar la información recargando las celdas
 constantemente como sucede con la memoria dinámica. Eso hace que la memoria SRAM sea
 más rápida que la DRAM, sin embargo por tener más partes o componentes en cada celda, las mismas ocupan mayor espacio que las celdas de memoria DRAM, obteniéndose menor cantidad
 de bits de almacenamiento en un chip del mismo tamaño y por otro lado encareciendo los costos de las memorias por la mayor cantidad de partes.
 Dado que la memoria SRAM es más rápida y costosa que la memoria DRAM, se la utiliza para la memoria caché del microprocesador.
 \cite{Desconocido}
-
+\newpage
 \section{Gestión de memoria en un computador.}\label{contenido} 
-
 Se denomina gestión de memoria al acto de gestionar la memoria de un dispositivo informático. De forma simplificada se trata de proveer mecanismos para asignar secciones de memoria a los programas que las solicitan, y a la vez, liberar las secciones de memoria que ya no se utilizan para que estén disponibles para otros programas. 
 
-La memoria es uno de los principales recursos de la computadora, la cual debe de administrarse con mucho cuidado. Aunque actualmente la mayoría de los sistemas de cómputo cuentan con una alta capacidad de memoria, de igual manera las aplicaciones actuales tienen también altos requerimientos de memoria, lo que sigue generando escasez de memoria en los sistemas multitarea y/o multiusuario.
-
-La parte del sistema operativo que administra la memoria se llama administrador de memoria y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen.
-
+La memoria es uno de los principales recursos de la computadora, la cual debe de administrarse con mucho cuidado. Aunque actualmente la mayoría de los sistemas de cómputo cuentan con una alta capacidad de memoria, de igual manera las aplicaciones actuales tienen también altos requerimientos de memoria, lo que sigue generando escasez de memoria en los sistemas multitarea y/o multiusuario. La parte del sistema operativo que administra la memoria se llama administrador de memoria y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen.
+\newline
 \textbf{Características.}
-
-\textbf{Protección.}
-La protección de memoria es un método para controlar el uso de memoria en una computadora, y es parte esencial de prácticamente todos los sistemas operativos modernos. El principal propósito de la protección de memoria es evitar que un proceso en un sistema operativo acceda a la memoria que no le ha sido asignada.
-
-\textbf{Memoria compartida.}
+\begin{itemize}
+    \item \textbf{Protección:}
+ es un método para controlar el uso de memoria en una computadora, y es parte esencial de prácticamente todos los sistemas operativos modernos. El principal propósito de la protección de memoria es evitar que un proceso en un sistema operativo acceda a la memoria que no le ha sido asignada.
+    \item \textbf{Memoria compartida:}
 Aunque la memoria utilizada por diferentes procesos suele estar protegida, algunos procesos puede que sí tengan que compartir información y, para ello, han de acceder la misma sección de memoria. La memoria compartida es una de las técnicas más rápidas para posibilitar la comunicación entre procesos.
-
-\textbf{Organización lógica.}
+    \item \textbf{Organización lógica:}
 Permiten que los programas se escriban como módulos compilables y ejecutables por separado.
-
-\textbf{Organización física.}
+    \item \textbf{Organización física:}
 La memoria suele dividirse en un almacenamiento primario de alta velocidad y uno secundario de menor velocidad.  La gestión de memoria del sistema operativo se ocupa de trasladar la información entre estos dos niveles de memoria.
-
+\end{itemize}
+\newpage
 \textbf {¿Por qué se necesita la gestión de memoria?}
 
 \begin{enumerate}
@@ -310,21 +305,21 @@ La memoria suele dividirse en un almacenamiento primario de alta velocidad y uno
     \item El administrador de memoria se encarga de llevar un registro de las partes de la memoria que están en uso y de las que no. Si detecta que hay una parte que ya no está en uso, la libera para poder asignarla a los procesos que la necesiten.
     \item  El administrador de memoria proporciona  protección y uso compartido, es decir, facilitar un espacio de memoria para cada proceso y controlar que ninguno de ellos trabaje en zonas de memoria que no le han sido asignados.
      \item Administrar el intercambio entre la memoria principal y el disco en los casos en los que la memoria principal no le pueda dar capacidad a todos los procesos que tienen necesidad de ella.
-\cite{UM}
+\cite{UM}\\
 \end{enumerate}
+\newpage
 \section{Rapidez de la memoria.}\label{contenido} 
 Cuando se piensa en la capacidad de almacenamiento de un computador, lo primero que viene a la mente es el disco duro. Cuando se piensa en la velocidad del computador, en cambio, lo primero en que se piensa es en el procesador o en la memoria RAM. Es por esto que en el momento de hacer que un computador sea más rápido, lo primero que se suele hacer es ‘aumentar la RAM’. Sin embargo, el principal factor que influye en la velocidad de un computador es, paradójicamente, el disco duro. La razón está en la mecánica de funcionamiento. El disco duro de un computador es similar a un disco de acetato: un motor mecánico, en conjunto con un electroimán, mueven un cabezal rotativo sobre el que descansan los platos magnéticos en los que se graban los datos que se van a almacenar (sistema operativo, documentos, música, etc.). Estos datos son grabados y posteriormente leídos por una cabeza de lectura, también conocida como aguja. Es un mecanismo muy similar al que permite la reproducción de los discos de acetato. Y esto es justamente lo que hace que un computador se demore más o menos tiempo: en el momento de adquirir los datos requeridos, el cabezal debe dirigirse al sector del disco en el que están almacenados, y leerlos mientas el disco está rotando.
-
+\newline
 Es aquí donde se debe tener en cuenta, además de la capacidad de almacenamiento, las revoluciones por minuto (RPM) de un disco. Mientras mayor es el número de RPM, más rápido será el giro del disco y permitirá una lectura más rápida de dichos datos.Como alternativa a este proceso de lectura, es posible instalar a un computador un disco de estado sólido (o SSD, por las siglas en inglés de Solid State Drive). La principal diferencia está en la disposición de la memoria interna: en lugar de un plato giratorio, un SSD tiene varios módulos fijos de almacenamiento, similares a los que se encuentran en el interior de una memoria USB. Varias pruebas realizadas por el portal estadounidense web PCWorld mostraron una mejoría directa en el desempeño en computadores de diferentes marcas que fueron sometidos a pruebas de rendimiento en dos fases: primero, con sus discos duros originales y, posteriormente, con un cambio de la unidad de almacenamiento, conservando el mismo procesador, la misma cantidad de memoria RAM. Uno de los factores determinantes tras la prueba fue la aceleración del arranque y del acceso a los datos en dichos computadores. Miguel Orjuela, country Manager de Colombia y Ecuador de Kingston, asegura que la aplicación de este tipo de discos no se limita exclusivamente al uso de computadores. Varios centros de seguridad o de videograbación han optado por este tipo de almacenamiento para lograr un acceso más rápido a videos o datos guardados en sistemas consolidados de discos de estado sólido. Sin embargo, cada tipo de requerimiento tiene su propio tipo de almacenamiento, dependiendo de si es un uso corporativo, personal o de seguridad.
 \cite{DISCO}
 
 
-    
-    
-  
 \section{Conclusión} \label{conclulsion}
-Se ha podido comprender la importancia que juega la capacidad de memora y la gestión de esta, al momento de desarrollo de aplicativos. Conocer el equipo, en especial su memoria, ayuda a que se puedan realziar trabajos más concretos.
+Se ha podido comprender la importancia que juega la capacidad de memora y la gestión de esta, al momento de desarrollo de aplicativos. Conocer el equipo, en especial su memoria, ayuda a que se puedan realizar trabajos más concretos.
+
+\newpage
+\section{Referencias bibliográficas.} 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
 \end{document}
